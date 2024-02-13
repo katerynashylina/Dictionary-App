@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.seacrh-bar {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 690px;
+    height: 64px;
+    padding-inline: 24px;
+    border-radius: 20px;
+    border: none;
+    background-color: $grayColor;
+    line-height: 64px;
+    margin-bottom: 1.5rem;
+
+    @include onTablet {
+      max-width: 620px;
+    }
+  
+    @include onPhone {
+      max-width: 350px;
+    }
+
+    &--dark {
+      background-color: hsl(0deg, 0%, 12%);
+      color: $whiteColor;
+    }
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    height: 64px;
+    width: 650px;
+    font-size: 20px;
+    font-weight: 600;
+
+    &::placeholder {
+      font-size: 18px;
+      width: 100%;
+    }
+  }
+}
+
+.search-bar__button {
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

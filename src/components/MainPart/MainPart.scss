@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.main {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 690px;
+    margin-bottom: 40px;
+
+    @include onTablet {
+      max-width: 620px;
+    }
+  
+    @include onPhone {
+      max-width: 350px;
+    }
+  }
+}
+
+.word {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 64px;
+  }
+
+  &__phonethics {
+    color: $purpleColor;
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+
+.audio {
+  &__wrapper {
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+  }
+}

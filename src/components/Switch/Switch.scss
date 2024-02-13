@@ -1,0 +1,53 @@
+@import '../../styles/variables.scss';
+
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-left: 1px solid #c2c1c1;
+  padding-left: 24px;
+
+  &__moon {
+    transition: 0.5s filter;
+  
+    &:hover {
+      cursor: pointer;
+      filter: drop-shadow(9px -2px 3px $purpleColor);
+    }
+  }
+}
+
+.switcher {
+  width: 40px;
+  height: 20px;
+  background-color: $darkGrayColor;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+
+  transition: 0.3s background-color;
+
+  &--dark {
+    background-color: $purpleColor;
+  }
+
+  &__circle {
+    width: 14px;
+    height: 14px;
+    background-color: $whiteColor;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+
+    &--light {
+      transform: translateX(0);
+    }
+
+    &--dark {
+      transform: translateX(20px);
+    }
+  }
+}

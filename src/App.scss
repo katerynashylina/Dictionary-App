@@ -1,0 +1,60 @@
+@import './styles/variables.scss';
+@import './styles/mixins.scss';
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: 0.3s background-color, 0.3s color;
+
+  &--dark {
+    background-color: $darkColor;
+    color: $whiteColor;
+  }
+
+  &__container {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 690px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 56px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+
+    @include onTablet {
+      max-width: 620px;
+    }
+
+    @include onPhone {
+      max-width: 350px;
+      padding: 15px;
+    }
+  }
+}
+
+.sans-serif__theme {
+  font-family: sans-serif;
+
+  &::placeholder {
+    font-family: sans-serif;
+  }
+}
+
+.serif__theme {
+  font-family: serif;
+
+  &::placeholder {
+    font-family: serif;
+  }
+}
+
+.mono__theme {
+  font-family: "Roboto Mono", monospace;
+
+  &::placeholder {
+    font-family: "Roboto Mono", monospace;
+  }
+}

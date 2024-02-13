@@ -1,0 +1,16 @@
+.audio {
+  border: none;
+  background-color: transparent;
+
+  &__img {
+    border-radius: 50%;
+
+    transition: box-shadow 0.3s, transform 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 3.5px 5px 14px #662a93;
+      transform: scale(1.06);
+    }
+  }
+}

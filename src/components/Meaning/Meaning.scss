@@ -1,0 +1,71 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.meaning {
+  margin-bottom: 40px;
+
+  &__title {
+    font-size: 24px;
+    font-style: italic;
+    position: relative;
+    margin-bottom: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: #e8e8e8;
+      height: 1px;
+      width: 100%;
+      max-width: 575px;
+      bottom: 13px;
+      left: 120px;
+
+      @include onTablet {
+        max-width: 490px;
+      }
+  
+      @include onPhone {
+        max-width: 250px;
+      }
+
+      @media (max-width: 445px) {
+        max-width: 200px;
+      }
+    }
+  }
+
+  &__mean {
+    margin-bottom: 14px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 12px;
+    margin-bottom: 40px;
+
+    &__element {
+      font-size: 20px;
+
+      &:before {
+        content: "•";
+        color: $purpleColor;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+
+    &__example {
+      color: $darkGrayColor;
+    }
+  }
+
+  &__source {
+    border-top: 1.5px solid #e8e8e8;
+    padding-top: 24px;
+  }
+}

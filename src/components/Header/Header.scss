@@ -1,0 +1,22 @@
+@import '../../styles/mixins.scss';
+
+.header {
+  width: 100%;
+  max-width: 690px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+
+  @include onTablet {
+    max-width: 620px;
+  }
+
+  @include onPhone {
+    max-width: 350px;
+  }
+
+  &__active {
+    display: flex;
+  }
+}

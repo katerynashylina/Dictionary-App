@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+.select {
+  width: 134px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-right: 24px;
+
+  &__wrapper {
+    border: none;
+    color: $darkColor;
+    font-size: 16px;
+    text-align: center;
+    
+    transition: 0.3s background-color, 0.3s color;
+    
+    &--dark {
+      background-color: $darkColor;
+      color: $whiteColor;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
