@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { colorThemes } from '../helpers/consts';
 
 const initialState = {
-  colorTheme: colorThemes[0],
+  colorTheme: colorThemes[0]
 };
 
 const colorThemeSlice = createSlice({
