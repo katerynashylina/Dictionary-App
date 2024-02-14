@@ -1,6 +1,6 @@
 # Dictionary App
 
-A necessary link:
+Necessary links:
     [DEMO LINK](https://katerynashylina.github.io/Dictionary-App/),
     [THE CHALLENGE](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL)
 
